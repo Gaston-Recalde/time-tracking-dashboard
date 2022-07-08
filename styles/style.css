@@ -12,4 +12,103 @@ html {
 body {
   font-family: 'Rubik', sans-serif;
 }
+
+body {
+  background-color: #0f1424;
+}
+
+.container {
+  width: 88%;
+  margin: 2rem auto;
+}
+
+.menu-card {
+  background-color: #1c1f4a;
+  border-radius: 1.6rem;
+}
+
+.menu-card .card-report {
+  background-color: #5847eb;
+  border-radius: 1.6rem;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.8rem;
+}
+
+.menu-card .card-report img {
+  width: 26%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.menu-card .card-report .report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.4rem;
+}
+
+.menu-card .card-report .report p {
+  color: #bdc1ff;
+  font-size: 1.5rem;
+}
+
+.menu-card .card-report .report .name {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.menu-card .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5rem;
+}
+
+.menu-card .menu .menu-link {
+  color: #6f76c8;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.menu-card .menu .menu-link:hover {
+  color: white;
+}
+
+.menu-card .menu .menu-active {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
