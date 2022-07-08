@@ -307,4 +307,73 @@ body {
     font-size: 3rem;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+  .container {
+    width: 77%;
+    -ms-grid-columns: 23% 23% 23% 23%;
+        grid-template-columns: 23% 23% 23% 23%;
+    gap: 3rem;
+  }
+  .menu-card {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+    grid-column: unset;
+    height: 100%;
+  }
+  .menu-card .card-report {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 70%;
+    padding: 3.5rem 3rem;
+  }
+  .menu-card .card-report .img {
+    width: 8.4rem;
+  }
+  .menu-card .card-report .report {
+    margin-top: 1.0rem;
+  }
+  .menu-card .card-report .report .name {
+    font-size: 4rem;
+  }
+  .menu-card .menu {
+    height: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .regular-card .property-card {
+    margin-top: 4.5rem;
+    padding: 2.8rem;
+  }
+  .regular-card .property-card .row-2 .hours {
+    font-size: 5.5rem;
+    padding-top: 1.9rem;
+  }
+  .regular-card .property-card .row-2 .description {
+    padding-top: 1.0rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
