@@ -24,7 +24,7 @@ fetch('./js/data.json')
         // Convert array to dict
         jsonData.forEach(element => {
             data[element.title] = element.timeframes;
-        })
+        });
 
         // I want to have reference to regular cards
         regularCards = document.querySelectorAll('.regular-card');
@@ -50,7 +50,7 @@ function updateCards(timeframe){
 function updateCard(card, timeframe) {
     const title = card.querySelector('.title').innerText;
     const current = data[title][timeframe]['current'];
-    const previous = data[title][timeframe]['current'];
+    const previous = data[title][timeframe]['previous'];
 
     const timeframeMsg = {
         'daily': 'Yesterday',
@@ -67,8 +67,8 @@ function updateCard(card, timeframe) {
 function createRegularCard(element, timeframe){
     // Con esto lo que hacemos es insertar desde aca todo el html, sin tener que escribirlo manualmente nosotros en el index
     let title = element['title'];
-    let current = element['timegrames'][timeframe]['current'];
-    let previous = element['timegrames'][timeframe]['current'];
+    let current = element['timeframes'][timeframe]['current'];
+    let previous = element['timeframes'][timeframe]['previous'];
 
     const timeframeMsg = {
         'daily': 'Yesterday',
