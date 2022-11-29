@@ -101,6 +101,7 @@ body{
 
         &:hover{
             background-color: $card-hover;
+            cursor: pointer;
         }
 
         .row{
@@ -135,7 +136,6 @@ body{
                     top: 0;
                     right: 0;
                     bottom: 0;
-                    // opacity: 0.5;
                     border-radius: 1.6rem;
                     display: none;
                     z-index: 1;

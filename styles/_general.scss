@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html{
@@ -15,3 +16,6 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.attribution { font-size: 13px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
